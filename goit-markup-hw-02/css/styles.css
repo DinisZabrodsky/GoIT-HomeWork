@@ -9,8 +9,19 @@ body{
     background-color:#FFFFFF;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 a {
     text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
 }
 
 .list {
@@ -36,10 +47,6 @@ a {
 /* ------------HEDER------------ */
 
 
-.heder {
-    display: flex;
-
-}
 
 .logo {
     font-family: 'Raleway';
@@ -98,6 +105,7 @@ a {
 }
 
 .hero-button {
+    display: inline-block;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -156,9 +164,6 @@ a {
     background: #F5F4FA;
 }
 
-.master-block {
-    background: #FFFFFF;
-}
 
 .masters-title {
     font-weight: 700;
