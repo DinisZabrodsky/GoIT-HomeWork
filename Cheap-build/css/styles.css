@@ -1,0 +1,291 @@
+:root {
+    --prymari-color: #212121;
+    --prymari-color-akcent: #2196f3;
+    --prymari-bacground-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: "montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 0;
+
+}
+
+h1, h2, h3, h4 {
+    font-family: "Roboto", sans-serif;
+}
+
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border: solid 1px red;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+/* ширина 990 - починає вилазити текст */
+
+/*----------HEADER----------*/
+
+.header {
+    background-color: var(--prymari-bacground-color);
+}
+
+.header-conteiner {
+    display: flex;
+    /* box-sizing: border-box;
+    min-height: 75px;
+    padding: 20px;
+    background-color: var(--prymari-bacground-color); */
+
+}
+
+
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--prymari-color-akcent);
+
+}
+
+.logo-span {
+    color: black;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-main {
+    display: flex;
+    margin-left: 50px;
+    gap: 14px;
+    
+}
+
+.header-main-element {
+    display: block;
+    background-color: aqua;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-main-element :hover{
+    border-bottom: solid 2px #0b0d18;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 25px;
+} 
+
+
+/*----------HERO----------*/
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 400px;
+    background-image: url(../img/hero-fon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.hero-titel {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: auto;
+
+}
+
+
+.hero-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 7px;
+    border-radius: 4px;
+    background-color: var(--prymari-color-akcent);    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    
+}
+
+.hero-link:focus, .hero-link:hover {
+    background-color: #123a5a;
+}
+
+/*----------ADVANTAGE----------*/
+
+
+.advantage-title {
+    text-align: center;
+}
+
+.advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.advantage-list-element {
+    box-sizing: border-box;
+    min-height: 150px;
+    flex-basis: calc((100% - 20px) / 2);
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 1px 1px 4px #0b0d18;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advantage-list-title {
+    padding-right: 30px;
+    text-align: center;
+}
+
+.element-one { 
+    padding-right: 120px;
+    background-image: url(../img/Chep001.jpg);
+    background-position: 104%;
+
+}
+
+.element-two {
+    padding-left: 120px;
+    background-image: url(../img/Chep002.jpg);
+    background-position: -17px;
+}
+
+.element-three {
+    padding-right: 120px;
+    background-image: url(../img/Chep003.jpg);
+    background-position: 102%;
+}
+
+.element-four {
+    padding-left: 120px;
+    background-image: url(../img/Chep004.jpg);
+    background-position: -22px;
+}
+
+/*----------SERVICES----------*/
+
+
+.services-title {
+    text-align: center;
+
+}
+
+.services-general-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services-element-g-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-sizing: border-box;
+    border: 1px solid #0b0d18;
+    
+}
+
+.services-title-poslugi{
+    text-align: center;
+}
+
+.services-img-two {
+    order: 1;
+}
+
+/* --------PORTFOLIO-------- */
+
+.portfolio-title {
+    text-align: center;
+}
+
+.portfolio-general-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.portfolio-element {
+    box-sizing: border-box;
+    max-width: 290px;
+    max-height: 260px;
+    flex-basis: calc((100% - 24px) / 4);
+
+}
+
+.portfolio-element > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #0b0d18;
+    border-radius: 5px;
+}
+
+
+.portfolio-element > img:hover,
+.portfolio-element > img:focus {
+    border-radius: 5px;
+    box-shadow: -4px -4px 7px red,
+    4px 4px 7px red;
+}

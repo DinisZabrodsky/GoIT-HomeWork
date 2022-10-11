@@ -95,6 +95,7 @@ a {
 
 .hero {
     background-color: #2F303A;
+    text-align: center;
 }
 
 .hero-title {
@@ -108,13 +109,9 @@ a {
 }
 
 .hero-button {
-    display: inline-block;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
 
@@ -152,7 +149,6 @@ a {
 }
 
 .benefits-list p {
-    font-size: 14px;
     line-height: 1.7;
     color: var(--primary-text-color);
 }
@@ -207,10 +203,8 @@ a {
 .master-block {
     box-sizing: border-box;
     max-width: 270px;
-    max-height: 428px;
     background-color: #FFFFFF;
-    flex-basis: calc((100% - 90px) / 4);
-    justify-content: space-between;
+    /* flex-basis: calc((100% - 90px) / 4); */
 }
 
 .master-block > img {
