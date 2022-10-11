@@ -36,7 +36,7 @@ h1, h2, h3, h4 {
     padding-left: 15px;
     padding-right: 15px;
 
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
 .visually-hidden {
@@ -92,19 +92,15 @@ h1, h2, h3, h4 {
 .header-main {
     display: flex;
     margin-left: 50px;
-    gap: 14px;
+    gap: 10px;
     
 }
 
-.header-main-element {
+.header-main-element > a{
     display: block;
-    background-color: aqua;
+    /* background-color: aqua; */
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.header-main-element :hover{
-    border-bottom: solid 2px #0b0d18;
 }
 
 .header-contact {
