@@ -46,10 +46,6 @@ a {
     margin: 0;
 }
 
-.all-button {
-    cursor: pointer;
-    border: none;
-}
 
 .visually-hidden {
     position: absolute;
@@ -130,6 +126,8 @@ a {
 .hero {
     background-color: #2F303A;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -150,7 +148,9 @@ a {
 
     background: var(--color-for-button);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px solid var(--color-for-button);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 .hero-button:hover, .hero-button:focus{
@@ -163,8 +163,11 @@ a {
 
 .benefits-list {
     display: flex;
-    gap: 30px;
+    flex-basis: calc((100% - 90px) / 4);
+}
 
+.benefits-list-bloc + .benefits-list-bloc {
+    margin-left: 30px;
 }
 
 .benefits-list h3 {
@@ -195,9 +198,12 @@ a {
 
 .type-of-work-box {
     display: flex;
-    gap: 30px;
     
     margin-bottom: 94px;
+}
+
+.type-of-work-element + .type-of-work-element {
+    margin-left: 30px;
 }
 
 .type-of-work-element {
@@ -232,11 +238,16 @@ a {
 .master-full-block {
     display: flex;
     flex-basis: calc((100% - 90px) / 4);
-    gap: 30px;
+}
+
+.master-block:not(:last-child) {
+    margin-right: 30px;
 }
 
 .master-block {
     background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .master-block > img {
@@ -324,6 +335,8 @@ a {
     font-size: 16px;
     line-height: 1.6;
     color: var(--primary-title-color);
+    border: none;
+    cursor: pointer;
 
     background: #F5F4FA;
     border-radius: 4px;
@@ -340,6 +353,7 @@ a {
 .cart-list{
     display: flex;
     flex-wrap: wrap;
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .cart-list-element:not(:nth-child(3n)) {
@@ -358,7 +372,10 @@ a {
 
 .cart-list-box {
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE; ;
+    border-bottom: 1px solid #EEEEEE;;
+
 }
 
 
