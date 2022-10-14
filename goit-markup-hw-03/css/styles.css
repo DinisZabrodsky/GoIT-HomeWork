@@ -153,6 +153,7 @@ a {
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    padding: 10px 32px;
 }
 
 .hero-button:hover, .hero-button:focus{
@@ -165,6 +166,9 @@ a {
 
 .benefits-list {
     display: flex;
+}
+
+.benefits-list-bloc{
     flex-basis: calc((100% - 90px) / 4);
 }
 
@@ -239,7 +243,6 @@ a {
 
 .master-full-block {
     display: flex;
-    flex-basis: calc((100% - 90px) / 4);
 }
 
 .master-block:not(:last-child) {
@@ -247,6 +250,7 @@ a {
 }
 
 .master-block {
+    flex-basis: calc((100% - 90px) / 4);
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -339,6 +343,7 @@ a {
     color: var(--primary-title-color);
     border: none;
     cursor: pointer;
+    padding: 6px 22px;
 
     background: #F5F4FA;
     border-radius: 4px;
@@ -355,7 +360,10 @@ a {
 .cart-list{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc((100% - 90px) / 4);
+}
+
+.cart-list-element {
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .cart-list-element:not(:nth-child(3n)) {
