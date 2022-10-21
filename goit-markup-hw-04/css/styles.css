@@ -152,6 +152,10 @@ a {
     url(../img/hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
+
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title {
@@ -319,6 +323,8 @@ a {
     justify-content: center;
     /* align-items: center; */
 
+    border-radius: 50%;
+
     color: #AFB1B8;
 
 }
@@ -335,7 +341,6 @@ a {
 .master-social-link:hover,
 .master-social-link:focus {
     background-color: var(--color-for-button);
-    border-radius: 50%;
 
     color: #FFFFFF;
 }
