@@ -1,0 +1,51 @@
+.type-of-work-box {
+    display: flex;
+    text-align: center;
+
+    
+    margin-bottom: 94px;
+}
+
+.type-of-work-element {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    max-width: 370px;
+
+    & + & {
+        margin-left: 30px;
+    }
+
+    & > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    
+        width: 100%;
+        height: 70px;
+    
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+
+    &-texst {
+        margin: 0;
+
+        font-weight: 700;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    }
+}

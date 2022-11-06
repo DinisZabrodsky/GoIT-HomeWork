@@ -1,0 +1,217 @@
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop .is-hidden .modal{
+    transform: translate(-50% -50%) scale(1.1);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 528px;
+    height: 581px;
+
+    background-color: #FFFFFF;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    padding: 40px;
+
+    &-title {
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+    
+        color: $primary-title-color;
+    
+        margin-bottom: 12px;
+    }
+}
+
+.button-modal {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    background: #FFFFFF;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    color: #000000;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        color: $color-for-button;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        cursor: pointer;
+    }
+
+    &-svg {
+        width: 11px;
+        height: 11px;
+    
+        fill: currentColor;
+    }
+}
+
+.modal-general-list {
+    margin-bottom: 20px;
+}
+
+.form-list-element {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    & > label {
+        font-size: 12px;
+        line-height: 1.15;
+        letter-spacing: 0.01em;
+        color: $primary-text-color;
+    
+        margin-bottom: 4px;
+    }
+
+    & > input {
+        padding: 11px 12px 11px 42px;
+
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        outline: 0;
+    
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    & > input:focus, textarea:focus {
+        border: 1px solid $color-for-button;
+    }
+
+
+}
+
+.modal-form-svg {
+    position: absolute;
+    display: block;
+    bottom: 11px;
+    left: 12px;
+
+    width: 18px;
+    height: 18px;
+
+    fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-list-element > input:focus + .modal-form-svg {
+    color: $color-for-button;
+}
+
+.form-list-element textarea {
+    resize: none;
+    width: 100%;
+    height: 120px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    outline: 0;
+
+    &::placeholder {
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.modal-last-blok {
+    text-align: center;
+}
+
+.checkbox-agree {
+    display: inline-block;
+    position: relative;
+
+    padding-left: 24px;
+
+    line-height: 1.7;
+    color: $primary-text-color;
+    margin-bottom: 30px;
+
+    & a {
+        text-decoration-line: underline;
+        color: $color-for-button;
+    }
+}
+
+.form-checkbox-svg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    width: 16px;
+    height: 15px;
+
+    fill: #fff;
+    border: 2px solid $primary-title-color;
+    border-radius: 2px;
+
+    .form-checkbox:checked ~ & {
+        fill: $color-for-button;
+        border: none;
+    }
+}
+
+.modal-button-submit {
+    text-align: center;
+    width: 200px;
+    height: 50px;
+
+    background-color: $color-for-button;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,875;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+
+    &:hover, &:focus {
+        background-color: #188CE8;
+        cursor: pointer;
+    }
+} 
