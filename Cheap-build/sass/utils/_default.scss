@@ -1,0 +1,63 @@
+
+$prymari-color: #212121;
+$prymari-color-akcent: #2196f3;
+$prymari-bacground-color: #ffffff;
+$prymari-color-two: #3a3a3a;
+$prymari-color-three: #757575;
+
+
+a {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: "Roboto Flex", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+
+    color: $prymari-color-two;
+
+    padding: 0;
+}
+
+h1, h2, h3, h4, h3{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: $prymari-color;
+
+    margin: 0;
+}
+
+p {
+    margin: 10px 0 0 0;
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
