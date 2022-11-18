@@ -1,0 +1,56 @@
+.advantage {
+    &-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &-list-element {
+        flex-basis: calc((100% - 20px) / 2);
+        height: 150px;
+
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+        padding: 10px 15px;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-origin: border-box;
+    }
+
+    &-list-title {
+        text-align: center;
+        font-size: 17px;
+    }
+}
+
+.element-one { 
+    padding-right: 130px;
+    background-image: url(../img/Chep001.jpg);
+    background-position: 104%;
+
+}
+
+.element-two {
+    padding-left: 130px;
+    background-image: url(../img/Chep002.jpg);
+    background-position: -13px;
+}
+
+.element-three {
+    padding-right: 130px;
+    background-image: url(../img/Chep003.jpg);
+    background-position: 102%;
+}
+
+.element-four {
+    padding-left: 130px;
+    background-image: url(../img/Chep004.jpg);
+    background-position: -18px;
+}

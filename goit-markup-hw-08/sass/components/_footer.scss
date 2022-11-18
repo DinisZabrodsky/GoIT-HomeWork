@@ -1,0 +1,242 @@
+.footer {
+    background-color: #2F303A;
+
+    &-container {
+    /* align-items: center; */
+    // @media screen and (max-width: 767px) {
+    //     display: block;
+    // }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+
+            & > div {
+                margin-bottom: 60px;
+            }
+        }
+
+        @media screen and (max-width: 1199px) {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            text-align: center;
+        }
+
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+    }
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0;
+
+    & span {
+        color: #FFFFFF;
+    }
+}
+
+.footer-address {
+    &  li:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &-map-adr {
+        font-style: normal;
+        line-height: 1.7;
+        color: #FFFFFF;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover, &:focus {
+            color: $color-for-button;
+        }
+    }
+
+    &-contact {
+        font-style: normal;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.6);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover, &:focus {
+            color: $color-for-button;
+        }
+    }
+}
+
+.footer-social {
+
+    @media screen and (max-width: 767px) {
+        margin-top: 48px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 90px;
+    }
+
+
+    &-title {
+        margin-top: 12px;
+        margin-bottom: 20px;
+    
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    }
+
+    &-list {
+        display: flex;
+        gap: 10px;
+
+        @media screen and (max-width: 767px) {
+            justify-content: center;
+        }
+    }
+
+    &-link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 44px;
+        height: 44px;
+    
+        border-radius: 50%;
+        background-color:rgba(255, 255, 255, 0.1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        color: #FFFFFF;
+
+        &-svg {
+            width: 20px;
+            height: 20px;
+        
+            fill: currentColor;
+        }
+
+        &:hover, &:focus {
+            background-color: $color-for-button;
+        }
+    }
+}
+
+.sign-up {
+
+    @media screen and (max-width: 767px) {
+        margin-top: 48px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
+
+    &-title {
+        margin-top: 12px;
+        margin-bottom: 20px;
+    
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.sign-up-block {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    & > input {
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 450px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+        }
+
+        
+        height: 50px;
+    
+        padding: 16px 15px;
+    
+        background-color: #2F303A;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        outline: 0;
+    
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    & > button {
+        display: flex;
+        align-items: center;
+
+        width: 200px;
+    
+        margin-left: 12px;
+        padding: 10px 28px;
+
+    
+        background-color: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        
+        cursor: pointer;
+    
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+    }
+
+    &-svg {
+        width: 24px;
+        height: 24px;
+    
+        margin-left: 10px;
+    }
+
+    & > input:focus {
+        border: 1px solid $color-for-button;
+    }
+
+    & > button:hover, & > button:focus {
+        background-color: #188CE8;
+    }
+
+
+}

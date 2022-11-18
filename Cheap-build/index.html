@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400&family=Raleway:wght@700&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>CheapBuild</title>
 </head>
 <body>
@@ -38,14 +38,16 @@
         </div>
     </header>
     <main>
+
+        <!-- HERO -->
         <section class="hero">
             <h1 class="hero-titel">
                 Бюджетні ремонти <br> Св'ятошинський район
             </h1>
-            <button class="hero-button">Замовити консультацію</button>
+            <button type="button" class="hero-button">Замовити консультацію</button>
         </section>
 
-        <!-- ----------ADVANTAGE---------- -->
+        <!-- ADVANTAGE-->
         <section class="advantage" id="adv">
             <div class="conteiner">
                 <h2 class="advantage-title">Чому саме ми</h2>
@@ -70,18 +72,22 @@
             </div>
         </section>
 
+        <!-- SERVICES -->
         <section class="services">
             <div class="conteiner">
-                <h2 class="services-title">Послуги</h2>
-                <ul class="services-general-list list">
-                    <li class="services-element-g-list">
-                        <div class="services-img-one" >
-                            <img src="./img/services002.jpg" alt="">
-                        </div>
-                        <div>
-                            <h3 class="services-title-poslugi">Квартири та офіси</h3>
-                            <ul>
-                                <li>Консультація</li>
+                <h2 class="services-title">Види робіт</h2>
+                <ul class="services-list list">
+                    <li class="services-list-element">
+                        <div class="services-list-bloc">
+                            <img src="./img/services001.jpg" alt="">
+                            <div class="services-list-bloc-title">
+                                <h3>Ремонт квартир</h3>
+                            </div>
+                            <div class="services-list-bloc-texst">
+                              <p>
+                                Малярні роботи
+                              </p>
+                              <ul>
                                 <li>Малярні роботи</li>
                                 <li>Нанесення фактури</li>
                                 <li>Фарбування та Лак</li>
@@ -92,44 +98,71 @@
                                 <li>Сантехнічні роботи</li>
                                 <li>Монтаж / Демонтаж</li>
                                 <li>Дрібні роботи по електриці</li>
-                            </ul>
+                              </ul>
+                            </div>
                         </div>
                     </li>
-                    <li class="services-element-g-list">
-                        <div class="services-img-two" >
+                    <li class="services-list-element">
+                        <div class="services-list-bloc">
                             <img src="./img/services001.jpg" alt="">
+                            <div class="services-list-bloc-title">
+                                <h3>Оздоблення мопів</h3>
+                            </div>
+                            <div class="services-list-bloc-texst">
+                              <p>
+                                Малярні роботи
+                                Нанесення фактури
+                                Фарбування та Лак
+                                Поклейка шпалер
+                                Укладка плитки
+                                Ламінат / Ліноліум
+                                Гіпсокартон
+                                Сантехнічні роботи
+                                Монтаж / Демонтаж
+                                Дрібні роботи по електриці
+                              </p>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="services-title-poslugi">Оздоблення мопів</h3>
-                            <ul>
-                                <li>Малярні роботи</li>
-                                <li>Фарбування та Лак</li>
-                                <li>Нанесення фактури</li>
-                                <li>Укладка плитки</li>
-                                <li>Армстронг</li>
-                                <li>Монтаж / Деонтаж</li>
-                                <li>Оздоблення сходових маршів</li>
-                                <li>Підвіконня</li>
-                                
-                            </ul>
+                    </li>
+                    <li class="services-list-element">
+                        <div class="services-list-bloc">
+                            <img src="./img/services001.jpg" alt="">
+                            <div class="services-list-bloc-title">
+                                <h3>Ремонт офісів</h3>
+                            </div>
+                            <div class="services-list-bloc-texst">
+                              <p>
+                                Малярні роботи
+                                Нанесення фактури
+                                Фарбування та Лак
+                                Поклейка шпалер
+                                Укладка плитки
+                                Ламінат / Ліноліум
+                                Гіпсокартон
+                                Сантехнічні роботи
+                                Монтаж / Демонтаж
+                                Дрібні роботи по електриці
+                              </p>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>        
         </section>
 
+        <!-- PORTFOLIO -->
         <section class="portfolio">
             <div class="conteiner">
                 <h2 class="portfolio-title">Наші роботи</h2>
-                <ul class="portfolio-general-list list">
-                    <li class="portfolio-element"><img src="./img/portfolio-001.jpg" alt="фактура на стінах"></li>
-                    <li class="portfolio-element"><img src="./img/portfolio-002.jpg" alt="ванна кімната"></li>
-                    <li class="portfolio-element"><img src="./img/portfolio-003.jpg" alt="офіс"></li>
-                    <li class="portfolio-element"><img src="./img/portfolio-004.jpg" alt="шпалери"></li>
-                    <li class="portfolio-element"><img src="./img/portfolio-005.jpg" alt="потолок"></li>
-                    <li class="portfolio-element"><img src="./img/portfolio-006.jpg" alt="стики спрею"></li>
-                    <li class="portfolio-element"><img src="./img/portfolio-007.jpg" alt="ванна мозайка"></li>
-                    <li class="portfolio-element"><img src="./img/portfolio-008.jpg" alt="ламінат"></li>
+                <ul class="portfolio-list list">
+                    <li class="portfolio-list-element"><img src="./img/portfolio-001.jpg" alt="фактура на стінах"></li>
+                    <li class="portfolio-list-element"><img src="./img/portfolio-002.jpg" alt="ванна кімната"></li>
+                    <li class="portfolio-list-element"><img src="./img/portfolio-003.jpg" alt="офіс"></li>
+                    <li class="portfolio-list-element"><img src="./img/portfolio-004.jpg" alt="шпалери"></li>
+                    <li class="portfolio-list-element"><img src="./img/portfolio-005.jpg" alt="потолок"></li>
+                    <li class="portfolio-list-element"><img src="./img/portfolio-006.jpg" alt="стики спрею"></li>
+                    <li class="portfolio-list-element"><img src="./img/portfolio-007.jpg" alt="ванна мозайка"></li>
+                    <li class="portfolio-list-element"><img src="./img/portfolio-008.jpg" alt="ламінат"></li>
                 </ul>
             </div>
         </section>
