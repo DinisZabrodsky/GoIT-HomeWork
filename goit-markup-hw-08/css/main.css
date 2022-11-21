@@ -369,7 +369,6 @@ a {
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-          
 }
 
 .menu-container .menu-toggle {
