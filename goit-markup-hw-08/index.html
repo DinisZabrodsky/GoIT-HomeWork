@@ -128,14 +128,17 @@
                     <li class="type-of-work-element">
                         <picture>
                             <source
-                                srcset="./img/box1.webp 370w, ./img/box1@2x.webp 740w" type="image/webp"
-                            >
+                                srcset="
+                                    ./img/box1.webp 370w, 
+                                    ./img/box1@2x.webp 740w" 
+                                type="image/webp"
+                                >
 
                             
                             <img
                                 srcset="./img/box1.jpg 370w, ./img/box1@2x.jpg 740w"
-                                src="./img/box1.jpg" alt="box1" width="370"
-                                sizes="100vw">
+                                sizes="(min-width: 1200px) 100vw"
+                                src="./img/box1.jpg" alt="box1" width="370">
                         </picture>
                         <div class="type-of-work-element-div">
                             <p class="type-of-work-element-texst">Десктопні додатки</p>
