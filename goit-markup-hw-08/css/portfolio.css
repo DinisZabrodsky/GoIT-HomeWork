@@ -489,11 +489,13 @@ a {
   position: relative;
   overflow: hidden;
 }
-.cart-list-img > img {
+.cart-list-img-bloc {
+  display: block;
+  height: 294px;
+}
+.cart-list-img-bloc img {
   display: block;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .cart-list-img-text-bloc {
   display: -webkit-box;
