@@ -392,6 +392,9 @@ a {
   color: #2196F3;
   background-color: #fff;
 }
+.mobile-menu a.active-mobi {
+  color: #2196F3;
+}
 
 .mobile-contacts {
   display: block;
