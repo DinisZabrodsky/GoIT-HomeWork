@@ -511,7 +511,7 @@ a {
 }
 .cart-list-img-bloc {
   display: block;
-  height: 294px;
+  max-height: 294px;
 }
 .cart-list-img-bloc img {
   display: block;
