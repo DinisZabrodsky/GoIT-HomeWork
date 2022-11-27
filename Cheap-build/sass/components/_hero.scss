@@ -4,27 +4,65 @@
     justify-content: center;
 
     max-width: 1600px;
-    height: 450px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
 
+    @media screen and (min-width: 768px) {
+        height: 450px;
+    }
+
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../img/hero-fon.jpg);
+    url(../../img/mobi-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
+    
+    @media screen and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../../img/mobi-hero@2x.jpg);
+    }
+
+    @media screen and (min-width: 960px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../img/hero-fon.jpg);
+
+            @media screen and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../../img/hero-fon@2x.jpg);
+    
+            }
+        }
+
+
 
     &-titel {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.3;
+        font-size: 26px;
+        line-height: 1.6;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: #FFFFFF;
         margin-bottom: 30px;
+
+                
+
+        @media screen and (min-width: 768px) {
+            font-size: 32px;
+            line-height: 1.5;
+        }
+
+        @media screen and (min-width: 960px) {
+            font-size: 44px;
+            line-height: 1.3;
+        }
     }
 
     &-button {

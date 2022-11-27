@@ -44,6 +44,7 @@ h1, h2, h3 {
 
 h3 {
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
 p {
@@ -51,9 +52,20 @@ p {
 }
 
 .conteiner {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 35px 15px;
+
+    @media screen and (min-width: 425px) and (max-width: 767px) {
+        width: 425px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 959px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 960px) {
+        max-width: 1200px;
+    }
 }
 
 .visually-hidden {
