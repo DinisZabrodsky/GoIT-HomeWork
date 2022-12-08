@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
 
+    width: 100%;
     max-width: 1600px;
     height: 400px;
     margin-left: auto;
@@ -14,7 +15,7 @@
 
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../img/mobi-hero.jpg);
+    url(../../img/mobi-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -24,18 +25,18 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../img/mobi-hero@2x.jpg);
+                url(../../img/mobi-hero@2x.jpg);
     }
 
     @media screen and (min-width: 960px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../img/hero-fon.jpg);
+        url(../../img/hero-fon.jpg);
 
             @media screen and (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../img/hero-fon@2x.jpg);
+                url(../../img/hero-fon@2x.jpg);
     
             }
         }

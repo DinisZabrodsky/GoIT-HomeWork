@@ -6,7 +6,7 @@
         #d4d4d4 10px,
         #e8e8e8 10px,
         #e8e8e8 20px
-      );
+    );
 
     &-title {
         text-align: center;
@@ -15,16 +15,33 @@
 
 .services-list {
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+
+
 
     
 
     &-element {
-        flex-basis: calc((100% - 30px) / 3);
-
+        width: 100%;
         overflow: hidden;
         cursor: pointer;
         transition: box-shadow 250ms linear;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 10px) / 2);
+
+
+            &:last-child {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
+
+        @media screen and (min-width: 960px) {
+            flex-basis: calc((100% - 20px) / 3);
+        }
 
         &:hover, &:focus {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -33,7 +50,7 @@
 
     &-bloc {
         position: relative;
-        width: 380px;
+        width: 100%;
 
         & > img {
             display: block;

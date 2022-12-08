@@ -9,23 +9,25 @@
         flex-wrap: wrap;
         gap: 10px;
 
-        @media screen and (min-width: 768px) and (max-width: 959px) {
+        @media screen and (min-width: 960px) {
             gap: 20px;
         }
         
     }
 
     &-list-element {
+        box-sizing: border-box;
 
+        width: 100%;
+        min-height: 97px;
 
-
-        @media screen and (min-width: 768px) and (max-width: 959px) {
-
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 10px) / 2);
         }
 
         @media screen and (min-width: 960px) {
-            flex-basis: calc((100% - 20px) / 2);
-            height: 150px;
+            height: 120px;
+            width: calc((100% - 20px) / 2);
         }
         
         
@@ -44,32 +46,66 @@
         text-align: center;
         font-size: 17px;
     }
+
+    &-list-mobi {
+
+
+        @media screen and (min-width: 960px) {
+            display: none;
+        }
+    }
+
+    &-list-desc {
+
+        @media screen and (max-width: 959px) {
+            display: none;
+        }
+
+    }
 }
 
-@media screen and (min-width: 768px) {
+.advantage-list-element {
+    @media screen and (max-width: 959px) {
 
-    .element-one { 
-        padding-right: 130px;
-        background-image: url(../img/Chep001.jpg);
-        background-position: 104%;
+        &:nth-child(even) {
+            padding-left: 75px;
+        }
 
+        &:nth-child(odd) {
+            padding-right: 75px;
+        }
+        
     }
 
-    .element-two {
-        padding-left: 130px;
-        background-image: url(../img/Chep002.jpg);
-        background-position: -13px;
-    }
+    @media screen and (min-width: 960px) {
+        &:nth-child(even) {
+            padding-left: 130px;
+        }
 
-    .element-three {
-        padding-right: 130px;
-        background-image: url(../img/Chep003.jpg);
-        background-position: 102%;
+        &:nth-child(odd) {
+            padding-right: 130px;
+        }
+        
     }
+}
 
-    .element-four {
-        padding-left: 130px;
-        background-image: url(../img/Chep004.jpg);
-        background-position: -18px;
-    }
+.element-one { 
+    background-image: url(../img/Chep001.jpg);
+    background-position: 104%;
+
+}
+
+.element-two {
+    background-image: url(../img/Chep002.jpg);
+    background-position: -13px;
+}
+
+.element-three {
+    background-image: url(../img/Chep003.jpg);
+    background-position: 102%;
+}
+
+.element-four {
+    background-image: url(../img/Chep004.jpg);
+    background-position: -18px;
 }
