@@ -68,22 +68,22 @@
     @media screen and (max-width: 959px) {
 
         &:nth-child(even) {
-            padding-left: 75px;
+            padding-left: 80px;
         }
 
         &:nth-child(odd) {
-            padding-right: 75px;
+            padding-right: 80px;
         }
         
     }
 
     @media screen and (min-width: 960px) {
         &:nth-child(even) {
-            padding-left: 130px;
+            padding-left: 100px;
         }
 
         &:nth-child(odd) {
-            padding-right: 130px;
+            padding-right: 100px;
         }
         
     }
@@ -91,13 +91,13 @@
 
 .element-one { 
     background-image: url(../img/Chep001.jpg);
-    background-position: 104%;
+    background-position: 103%;
 
 }
 
 .element-two {
     background-image: url(../img/Chep002.jpg);
-    background-position: -13px;
+    background-position: -12px;
 }
 
 .element-three {
@@ -107,5 +107,5 @@
 
 .element-four {
     background-image: url(../img/Chep004.jpg);
-    background-position: -18px;
+    background-position: -15px;
 }
