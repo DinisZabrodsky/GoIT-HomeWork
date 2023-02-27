@@ -10,11 +10,12 @@ const ingredients = [
 
 const selectorEl = document.querySelector('#ingredients');
 
-const addElement = [];
-
-function addListEl() {
-  
-  
-};
+ingredients.map(element => {
+  const listEl = document.createElement('li');
+  listEl.classList.add('item');
+  listEl.textContent = element;
+  console.log(listEl.textContent);
+  selectorEl.appendChild(listEl);
+});
 
 
