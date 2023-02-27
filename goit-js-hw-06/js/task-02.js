@@ -7,6 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 
+const elementOnPage = [];
 
 const selectorEl = document.querySelector('#ingredients');
 
@@ -14,8 +15,11 @@ ingredients.map(element => {
   const listEl = document.createElement('li');
   listEl.classList.add('item');
   listEl.textContent = element;
-  console.log(listEl.textContent);
-  selectorEl.appendChild(listEl);
+  elementOnPage.push(listEl);
+
+
+  // selectorEl.appendChild(listEl);
 });
 
+selectorEl.append(...elementOnPage);
 
