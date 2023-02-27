@@ -24,10 +24,6 @@ function onFormSubmit (event) {
 
         savePassword.push(newUser);
     };
-
-    console.log(savePassword);
-
-
 };
 
 
