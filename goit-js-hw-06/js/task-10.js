@@ -8,36 +8,40 @@ const createBtn = control.querySelector('[data-create]');
 const destoroyBtn = control.querySelector('[data-destroy]');
 
 createBtn.addEventListener('click', createlist);
-destoroyBtn.addEventListener('click', clearDesk)
+destoroyBtn.addEventListener('click', clearDesk);
 
-let numberEl = 0;
+
 
 function createlist () {
-  const value = control.children[0].value;
-  numberEl = value;
+  const value = Number(control.children[0].value);
+  let baseEL = [];
 
-  for (i = 0, i >= value, i += 1) {
+  if (value !== 0) {
+    for (let i = 0; i <= value; i += 1) {
+      const color = getRandomHexColor();
+      const element = constructor(i, color);
+      baseEL.push(element);
+    };
 
-    
-
-  }
+    boxForEl.append(...baseEL);
+  };
   
-
- 
-  
-  constructor() 
-
 };
 
 
 
-function constructor() {
-
+function constructor(value, color) {
+  let valueEl = value * 10 + 30;
+  const boxEl = document.createElement('div');
+  boxEl.style.width = `${valueEl}px`;
+  boxEl.style.height = `${valueEl}px`;
+  boxEl.style.backgroundColor = color;
 
   return boxEl;
-}
+};
 
-function clearDesk () {
+function clearDesk() {
   control.children[0].value = 0;
+  boxForEl.innerHTML = "";
 
-}
+};
